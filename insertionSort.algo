@@ -1,0 +1,17 @@
+ALGORITHM InsertionSort
+VAR
+A: ARRAY_OF INTEGER [5];
+i,n:  INTGER;
+hole: INTEGER;
+value: INTGER
+BEGIN
+FOR i =0 TO n-1 DO
+value:=A[i];
+hole:= i;
+WHILE (hole > 0 AND A[hole -1] > value) DO
+A [hole] := A[hole-1]
+hole := hole-1;
+END_WHILE
+A[hole] := value;
+END_FOR
+END.
